@@ -1,0 +1,111 @@
+/* Sheet style CSS2 & CSS3 - MINERALI INDUSTRIALI ESG */
+
+:root {
+  --brand-dark: #023b30;
+  --brand-primary: #046753;
+  --brand-teal: #026a5b;
+  --brand-lime: #60ac30;
+  --brand-mint: #8ac267;
+  --brand-gold: #d4bf95;
+  --surface-light: #f6f8f7;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(4, 103, 83, 0.12);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.glass-header {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.glass-header.scrolled {
+  box-shadow: 0 10px 30px -10px rgba(2, 59, 48, 0.12);
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.hero-section {
+  position: relative;
+  background-image: linear-gradient(125deg, rgba(2, 59, 48, 0.92) 0%, rgba(4, 103, 83, 0.84) 55%, rgba(2, 59, 48, 0.88) 100%),
+                    url('../img/banner-sostenibilita.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bento-card {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px -15px rgba(2, 59, 48, 0.15);
+  border-color: rgba(4, 103, 83, 0.35);
+}
+
+.pillars-section {
+  background-image: linear-gradient(180deg, rgba(2, 43, 35, 0.93) 0%, rgba(4, 78, 63, 0.90) 100%),
+                    url('../img/sfondo-impegno.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .pillars-section {
+    background-attachment: scroll;
+  }
+}
+
+.btn-download-esg {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-download-esg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -6px rgba(4, 103, 83, 0.45);
+}
+
+.btn-download-esg:active {
+  transform: scale(0.98);
+}
+
+.ripple-span {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-anim 0.65s linear;
+  background-color: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
