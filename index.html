@@ -345,6 +345,25 @@
             Il nostro percorso nella sostenibilità
           </h2>
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-7 flex flex-col hover:bg-white/15 transition-all reveal-up">
+            <span class="font-display text-3xl font-extrabold text-brand-mint mb-4">2021</span>
+            <p class="text-sm text-emerald-50/95">Redazione 1° Bilancio di Sostenibilità per la capogruppo Minerali Industriali.</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-7 flex flex-col hover:bg-white/15 transition-all reveal-up">
+            <span class="font-display text-3xl font-extrabold text-brand-mint mb-4">2022</span>
+            <p class="text-sm text-emerald-50/95">Istituzione Team ESG, Comitato ESG e 2° Bilancio di Sostenibilità di Gruppo.</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-7 flex flex-col hover:bg-white/15 transition-all reveal-up">
+            <span class="font-display text-3xl font-extrabold text-brand-mint mb-4">2023</span>
+            <p class="text-sm text-emerald-50/95">Adesione UN Global Compact, 3° Bilancio certificato Deloitte e Medaglia d'Oro EcoVadis.</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-7 flex flex-col hover:bg-white/15 transition-all reveal-up">
+            <span class="font-display text-3xl font-extrabold text-brand-mint mb-4">2024</span>
+            <p class="text-sm text-emerald-50/95">Certificazioni LCA/circolarità, 4° Bilancio di Sostenibilità e primo Piano di Sostenibilità.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -369,6 +388,29 @@
                 <span class="block font-display text-2xl font-extrabold text-brand-primary">78 / 100</span>
                 <span class="block text-xs font-semibold text-slate-700">Medaglia d’Argento Gruppo 2026</span>
               </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 my-8" role="tablist" aria-label="Filtra riconoscimenti per anno">
+            <button type="button" data-award-year="all" class="award-tab-btn active px-5 py-2.5 rounded-full text-sm font-bold bg-brand-primary text-white shadow-sm transition-all">Tutti gli anni</button>
+            <button type="button" data-award-year="2026" class="award-tab-btn px-5 py-2.5 rounded-full text-sm font-bold bg-slate-100 text-slate-700 hover:bg-brand-primary/10 transition-all">2026</button>
+            <button type="button" data-award-year="2025" class="award-tab-btn px-5 py-2.5 rounded-full text-sm font-bold bg-slate-100 text-slate-700 hover:bg-brand-primary/10 transition-all">2025</button>
+            <button type="button" data-award-year="2024" class="award-tab-btn px-5 py-2.5 rounded-full text-sm font-bold bg-slate-100 text-slate-700 hover:bg-brand-primary/10 transition-all">2024</button>
+            <button type="button" data-award-year="2023" class="award-tab-btn px-5 py-2.5 rounded-full text-sm font-bold bg-slate-100 text-slate-700 hover:bg-brand-primary/10 transition-all">2023</button>
+          </div>
+
+          <div class="space-y-4">
+            <div data-award-block="2026" class="award-year-block p-5 rounded-2xl bg-[var(--surface-light)] border border-slate-200/70">
+              <strong class="text-brand-primary">2026:</strong> Medaglia d’Argento EcoVadis per l’intero Gruppo (78/100).
+            </div>
+            <div data-award-block="2025" class="award-year-block p-5 rounded-2xl bg-[var(--surface-light)] border border-slate-200/70">
+              <strong class="text-brand-primary">2025:</strong> Medaglia d’Argento EcoVadis (75/100), Best Performance Award SDA Bocconi e Premio Deloitte Best Managed Companies.
+            </div>
+            <div data-award-block="2024" class="award-year-block p-5 rounded-2xl bg-[var(--surface-light)] border border-slate-200/70">
+              <strong class="text-brand-primary">2024:</strong> Verallia CSR Supplier Award e Medaglia d’Argento EcoVadis (73/100).
+            </div>
+            <div data-award-block="2023" class="award-year-block p-5 rounded-2xl bg-[var(--surface-light)] border border-slate-200/70">
+              <strong class="text-brand-primary">2023:</strong> Medaglia d’Oro EcoVadis capogruppo, Best Performance Award SDA Bocconi e Campioni della Sostenibilità.
             </div>
           </div>
         </div>
@@ -415,7 +457,7 @@
     </section>
 
     <!-- CENTRO DOWNLOAD DOCUMENTI ESG -->
-    <section id="documenti-esg" class="py-20 md:py-28 relative text-white" style="background-image: linear-gradient(145deg, rgba(2, 43, 35, 0.96) 0%, rgba(4, 82, 66, 0.94) 100%), url('img/sfondo-documenti.jpg'); background-size: cover; background-position: center;">
+    <section id="documenti-esg" class="py-20 md:py-28 relative text-white" style="background-image: linear-gradient(145deg, rgba(2, 43, 35, 0.96) 0%, rgba(4, 82, 66, 0.94) 100%), url('../img/sfondo-documenti.jpg'); background-size: cover; background-position: center;">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 reveal-up">
           <div>
@@ -431,7 +473,41 @@
             <span id="doc-counter" class="font-display text-2xl font-extrabold text-brand-mint">8 Pubblicazioni</span>
           </div>
         </div>
+
+        <!-- Barra Filtri e Ricerca -->
+        <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-4 sm:p-5 mb-10 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 reveal-up">
+          <div class="flex flex-wrap gap-2" role="tablist" aria-label="Filtra documenti ESG per tipologia">
+            <button type="button" data-doc-filter="all" class="doc-filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-lime text-white shadow-md transition-all">
+              Tutti i documenti (8)
+            </button>
+            <button type="button" data-doc-filter="piano" class="doc-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white/10 text-white hover:bg-white/20 transition-all">
+              Piani di Sostenibilità (2)
+            </button>
+            <button type="button" data-doc-filter="bilancio" class="doc-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white/10 text-white hover:bg-white/20 transition-all">
+              Bilanci di Sostenibilità (6)
+            </button>
+          </div>
+
+          <div class="relative w-full md:w-72">
+            <input
+              id="doc-search-input"
+              type="search"
+              placeholder="Cerca per anno (es. 2026, 2025)..."
+              aria-label="Cerca documento ESG per anno o titolo"
+              class="w-full px-4 py-2.5 rounded-xl bg-white/15 border border-white/25 text-white placeholder-emerald-200/70 text-sm focus:outline-none focus:ring-2 focus:ring-brand-mint focus:bg-white/20 transition-all"
+            />
+          </div>
+        </div>
+
         <div id="documents-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+
+        <div id="no-docs-message" class="hidden text-center py-14 bg-white/5 rounded-3xl border border-white/15 mt-6">
+          <p class="font-display text-xl font-bold text-white mb-2">Nessun documento trovato</p>
+          <p class="text-emerald-200 text-sm mb-5">Prova a modificare i criteri di ricerca o reimposta i filtri.</p>
+          <button type="button" id="reset-docs-btn" class="px-5 py-2.5 rounded-xl bg-brand-lime text-white font-bold text-sm hover:bg-[#529627] transition-colors">
+            Mostra tutti i documenti
+          </button>
+        </div>
       </div>
     </section>
 
@@ -456,11 +532,75 @@
     </section>
   </main>
 
+  <!-- =====================================================================
+       11. FOOTER ISTITUZIONALE MODERNO
+       ===================================================================== -->
   <footer class="bg-brand-dark text-emerald-100/85 pt-16 pb-12 border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
-      <p>Minerali Industriali S.r.l. &bull; Piazza Martiri della Libertà, 4 - 28100 Novara</p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <!-- Colonna 1: Brand & Dati Legali -->
+        <div class="md:col-span-7 space-y-3 text-sm leading-relaxed">
+          <div class="flex items-center gap-3 mb-4">
+            <img
+              src="img/logo_senza_naming.png"
+              alt="Minerali Industriali"
+              class="h-11 w-auto brightness-0 invert"
+              onerror="this.src='https://placehold.co/80x80/046753/ffffff?text=MI'"
+            />
+            <span class="font-display text-lg font-extrabold text-white tracking-tight">Minerali Industriali S.r.l.</span>
+          </div>
+          <p>Sede Legale e Amministrativa: Piazza Martiri della Libertà, 4 - 28100 Novara - ITALIA</p>
+          <p>Cod.Fisc. e Part. Iva n. 01661310035 - C.C.I.A.A. Monte Rosa Laghi Alto Piemonte: Registro Imprese n. 01661310035 REA n. NO – 190542</p>
+          <p>Capitale sociale di euro 26.844.177,00 i.v. - durata al 31.12.2050</p>
+        </div>
+
+        <!-- Colonna 2: Contatti & Social -->
+        <div class="md:col-span-5 md:text-right space-y-3 text-sm">
+          <h3 class="font-display text-base font-bold text-white uppercase tracking-wider mb-3">Contatti &amp; Canali Ufficiali</h3>
+          <p>Tel: <a href="tel:+390321377600" class="text-white hover:text-brand-mint transition-colors">+39 0321 377600</a> &bull; Fax: +39 0321 391874</p>
+          <p>PEC: <a href="mailto:mineraliindustriali@pec.it" class="text-brand-mint hover:underline">mineraliindustriali@pec.it</a></p>
+          <p>Email: <a href="mailto:info@minerali.com" class="text-brand-mint hover:underline">info@minerali.com</a></p>
+
+          <!-- Social Links con loghi originali -->
+          <div class="flex items-center md:justify-end gap-3 pt-3">
+            <a href="https://www.youtube.com/MineraliIndustriali" target="_blank" rel="noopener" aria-label="Canale YouTube Minerali Industriali" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition-colors">
+              <svg class="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube
+            </a>
+            <a href="https://it.linkedin.com/company/minerali-industriali-s.r.l." target="_blank" rel="noopener" aria-label="Pagina LinkedIn Minerali Industriali" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition-colors">
+              <svg class="w-4 h-4 text-sky-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Link Legali -->
+      <div class="pt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider text-emerald-200/80">
+        <a href="https://www.mineraliindustriali.it/wp-content/uploads/2018/05/INFORMATIVA-PRIVACY-MI.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Privacy Policy</a>
+        <span class="text-white/20">|</span>
+        <a href="https://www.mineraliindustriali.it/cookie-policy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Cookie Policy</a>
+        <span class="text-white/20">|</span>
+        <a href="https://www.mineraliindustriali.it/business-contact-privacy-policy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Business Contact Policy</a>
+        <span class="text-white/20">|</span>
+        <a href="https://www.mineraliindustriali.it/contatti/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Contatti</a>
+        <span class="text-white/20">|</span>
+        <a href="https://www.mineraliindustriali.it/dichiarazione-accessibilita/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Dichiarazione di Accessibilità</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Toast Notifica -->
+  <div id="toast-notification" role="status" aria-live="polite" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-brand-dark text-white border border-brand-mint/40 shadow-2xl">
+      <span class="w-7 h-7 rounded-full bg-brand-lime/25 text-brand-mint flex items-center justify-center shrink-0">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </span>
+      <span id="toast-message" class="text-sm font-semibold">Operazione completata</span>
+    </div>
+  </div>
 
   <script src="script/script.js" defer></script>
 </body>
